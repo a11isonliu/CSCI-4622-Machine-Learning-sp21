@@ -19,7 +19,7 @@ class TestUnweightedKNN(unittest.TestCase):
         """
         test 1NN
         """
-        k1nn = self.knn_ctor(self.X_train, self.y_train, K=1) 
+        k1nn = self.knn_ctor(self.X_train, self.y_train, K=1)
         self.assertAlmostEqual(k1nn.classify(self.x), 1)
 
     def test2NNclassify(self): 
